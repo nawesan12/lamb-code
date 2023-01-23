@@ -1,9 +1,7 @@
-import styles from './page.module.css'
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      Lamb Code
+    <main className="page">
+      <h1 className='text-4xl font-bold'>Lamb Code</h1>
     </main>
   )
 }
