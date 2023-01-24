@@ -12,7 +12,7 @@ export default function HomeFeatures() {
     {
       id: 2,
       title: "Easy",
-      description: "Lamb Code is the easiest way to learn code",
+      description: "Lamb Code is the easiest way to learn code, with the best teachers, and the best projects!",
       image: "/favicon.ico"
     }
   ]
@@ -23,13 +23,13 @@ export default function HomeFeatures() {
         features.map((e, index) => (
           <div 
             key={index} 
-            className={`flex items-center justify-evenly gap-48 ${e.id % 2 === 0? "flex-row-reverse" : ""}`}
+            className={`flex items-center flex-wrap justify-center my-10 ${e.id % 2 === 0? "flex-row-reverse" : ""}`}
           >
             <div className="image">
               <Image src={e.image} alt="Lamb Code" width={250} height={250} />
             </div>
 
-            <div className="description flex flex-col gap-4">
+            <div className="description flex flex-col gap-4 w-96 px-7">
               <h2 className="text-5xl font-bold">{e.title}</h2>
               <p className="text-lg w-3/4 opacity-60">{e.description}</p>
             </div>
