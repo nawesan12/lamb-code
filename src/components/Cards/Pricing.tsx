@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PricingCard({ plan }: { plan: any }) {
   return (
-    <article key={plan.id} className="card flex p-7 items-center justify-center rounded-md bg-[var(--text-primary)] shadow-sm shadow-gray-400 h-3/4 min-w-min w-72">
+    <article key={plan.id} className={`card flex p-7 items-center justify-center rounded-md bg-[var(--text-primary)] shadow-sm shadow-gray-400 h-3/4 min-w-min w-72 ${plan.id === 2 ? "scale-110" : ""}`}>
       <div className="card-info flex flex-col gap-6">
         <span className="font-semibold opacity-70 text-sm">{plan.name}</span>
         <h5><strong className="text-3xl font-bold">AR${plan.price}</strong> per month</h5>

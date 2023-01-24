@@ -9,7 +9,7 @@ export default function HomePricing() {
       id: 1,
       name: "Starter",
       price: 1000,
-      included: ["Example", "Example", "Example", "Example"]
+      included: ["Some Courses", "Merit Rewards", "Example", "Diplomas"]
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function HomePricing() {
       id: 3,
       name: "Complete",
       price: 2500,
-      included: ["Example", "Example", "Real Projects", "Example"]
+      included: ["Everything from Professional", "Free PDFs", "Real Projects", "Support 7/365"]
     }
   ]
 

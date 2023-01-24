@@ -17,6 +17,9 @@ export default function HomeFooter() {
         <li className="opacity-80 hover:opacity-100">
           <a title="Twitter of Lamb Code - The Lamb Project" href="https://twitter.com/thelambproject" target="_blank" rel="noreferrer">Twitter</a>
         </li>        
+        <li className="opacity-80 hover:opacity-100">
+          <a title="Github of Lamb Code - The Lamb Project" href="https://github.com/thelambproject" target="_blank" rel="noreferrer">Github</a>
+        </li>        
       </ul>
     </footer>
   )
