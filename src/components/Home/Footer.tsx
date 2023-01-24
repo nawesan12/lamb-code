@@ -6,7 +6,7 @@ export default function HomeFooter() {
 
   return (
     <footer className="bg-black text-white flex items-center justify-between py-10 px-8 text-sm">
-      <p title="Lamb Code - The Lamb Project">© The Lamb Project {actualYear}</p>
+      <h6 title="Lamb Code - The Lamb Project">© The Lamb Project {actualYear}</h6>
 
       <Image src="/favicon.ico" alt="Lamb Code" width={25} height={25}/>
 
