@@ -1,3 +1,4 @@
+import HomeFAQ from "@/components/Home/FAQ"
 import HomeFeatures from "@/components/Home/Features"
 import HomeFooter from "@/components/Home/Footer"
 import HomeHero from "@/components/Home/Hero"
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeHero />      
       <HomeFeatures />
       <HomePricing />
+      <HomeFAQ />
       <HomeStartToday />
       <HomeFooter />
     </main>
