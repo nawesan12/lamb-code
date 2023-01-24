@@ -5,4 +5,3 @@ export default function handler(_: NextApiRequest, res: NextApiResponse<string>)
 
   res.status(200).json(status)
 }
-
