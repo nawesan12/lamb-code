@@ -6,13 +6,13 @@ export default function HomeFeatures() {
     {
       id: 1,
       title: "Fast",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      description: "Lamb Code is the fastest way to improve you tech skills, or just start a new career with us!",
       image: "/favicon.ico"
     },
     {
       id: 2,
       title: "Easy",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      description: "Lamb Code is the easiest way to learn code",
       image: "/favicon.ico"
     }
   ]
@@ -26,7 +26,7 @@ export default function HomeFeatures() {
             className={`flex items-center justify-evenly gap-48 ${e.id % 2 === 0? "flex-row-reverse" : ""}`}
           >
             <div className="image">
-              <Image src={e.image} alt="" width={250} height={250} />
+              <Image src={e.image} alt="Lamb Code" width={250} height={250} />
             </div>
 
             <div className="description flex flex-col gap-4">

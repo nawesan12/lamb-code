@@ -8,7 +8,7 @@ export default function HomeFooter() {
     <footer className="bg-black text-white flex items-center justify-between py-10 px-8 text-sm">
       <p>© The Lamb Project {actualYear}</p>
 
-      <Image src="/favicon.ico" alt="" width={25} height={25}/>
+      <Image src="/favicon.ico" alt="Lamb Code" width={25} height={25}/>
 
       <ul className="flex gap-4">
         <li className="opacity-80 hover:opacity-100">
