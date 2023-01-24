@@ -12,7 +12,7 @@ export default function HomeFooter() {
 
       <ul className="flex gap-4">
         <li className="opacity-80 hover:opacity-100">
-          <a href="https://linkedin.com/in/company/lamb-code" target="_blank" rel="noreferrer">Linkedin</a>
+          <a href="https://linkedin.com/in/nahuel-santillan" target="_blank" rel="noreferrer">Linkedin</a>
         </li>
         <li className="opacity-80 hover:opacity-100">
           <a href="https://twitter.com/thelambproject" target="_blank" rel="noreferrer">Twitter</a>
