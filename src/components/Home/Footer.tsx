@@ -15,7 +15,7 @@ export default function HomeFooter() {
           <a href="https://linkedin.com/in/company/lamb-code" target="_blank" rel="noreferrer">Linkedin</a>
         </li>
         <li className="opacity-80 hover:opacity-100">
-          <a href="https://twitter.com/lamb-code" target="_blank" rel="noreferrer">Twitter</a>
+          <a href="https://twitter.com/thelambproject" target="_blank" rel="noreferrer">Twitter</a>
         </li>        
       </ul>
     </footer>
