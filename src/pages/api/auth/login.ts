@@ -21,14 +21,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     return res.status(400).json({ error: "This user does not exists" })
   }
 
-  const passwordMatches = await compare(password, userExists.password)
+  // const passwordMatches = await compare(password, userExists.password)
 
-  if(!passwordMatches) {
-    return res.status(400).json({ success: false, error: "Wrong password"})
-  }
+  // if(!passwordMatches) {
+  //   return res.status(400).json({ success: false, error: "Wrong password"})
+  // }
 
-  //@ts-ignore
-  delete userExists.password
+  // //@ts-ignore
+  // delete userExists.password
 
   const token = sign(userExists, process.env.TOKEN_SECRET as Secret, {
     expiresIn: "100 days"
