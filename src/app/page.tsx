@@ -10,7 +10,7 @@ import ArticlePromotion from "@/components/Modals/ArticlePromotion"
 export default function Home() {
   return (
     <main className="page">
-      <ArticlePromotion link="article" blank/>
+      <ArticlePromotion link="article" blank={false}/>
       <HomeHeader />
       <HomeHero />      
       <HomeFeatures />
