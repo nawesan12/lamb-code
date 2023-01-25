@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function ArticlePromotion({ link, blank }: { link: string, blank: boolean }) {
   return (
-    <section className="max-w-7xl mx-auto fixed bottom-6 left-6">
+    <section className="max-w-7xl mx-auto fixed bottom-6 left-6 z-50">
       <div className="relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
         <div className="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
@@ -11,7 +11,7 @@ export default function ArticlePromotion({ link, blank }: { link: string, blank:
           </svg>
           <div className="space-y-2 flex flex-col gap-2">
             <p className="text-slate-800">How to make a glowing background!</p>
-            <Link href={`/${link}`} target="_blank" rel="noreferrer">Read Article →</Link>
+            <Link href={`/${link}`} target={blank ? "_blank" : ""} rel={blank ? "noreferrer" : ""}>Read Article →</Link>
           </div>
         </div>
       </div>
