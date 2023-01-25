@@ -1,7 +1,9 @@
+import RegisterForm from "@/components/Forms/Register"
+
 export default function RegisterPage() {
   return (
-    <>
-      Register Page
-    </>
+    <section className="page flex items-center justify-center">
+      <RegisterForm />
+    </section>
   )
 }

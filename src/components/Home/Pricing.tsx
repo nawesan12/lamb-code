@@ -1,4 +1,3 @@
-import Link from "next/link"
 import PricingCard from "../Cards/Pricing"
 import SectionTitle from "../Titles/Section"
 
@@ -28,13 +27,15 @@ export default function HomePricing() {
   return (
     <section className="section flex flex-col justify-evenly">
       <SectionTitle title="Pricing" />
-      <section className="pricing flex items-center justify-evenly flex-wrap whitespace-nowrap">
+      <section className="pricing flex items-center justify-center flex-wrap whitespace-nowrap">
         {
           plans.map((e, index) => (
             <PricingCard plan={e} key={index}/>
           ))
         }
       </section>
+      
+
       
     </section>
   )

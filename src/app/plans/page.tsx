@@ -1,10 +1,9 @@
 import GoBackBtn from "@/components/Buttons/GoBack";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Page() {
   return (
     <section className="page">
-      <GoBackBtn />
-      {children}
+      Plans
     </section>
   )
 }
