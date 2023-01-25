@@ -34,14 +34,6 @@ export default function LoginForm() {
         >Forgot your password?</a
       >
     </div>
-    <div
-      className="flex justify-center w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12"
-    >
-      <p className="font-semibold text-gray-600 text-sm">
-        Ei prima conclusionemque eum. Porro vivendum eum in, eam ex homero
-        deserunt, ius ut dolorem iracundia.
-      </p>
-    </div>
 </main>
   )
 }

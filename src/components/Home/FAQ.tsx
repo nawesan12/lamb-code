@@ -1,45 +1,51 @@
+import Link from "next/link";
 import SectionTitle from "../Titles/Section";
+import FAQitem from "./FAQitem";
 
 export default function HomeFAQ() {
+
+  const questions = [
+    {
+      question: "Do i have any advantage with the Complete plan?",
+      answer: "Yes"
+    },
+    {
+      question: "Can i start from total zero?",
+      answer: "Totally yes."
+    },
+    {
+      question: "What languages can i learn here?",
+      answer: "Javascript and..."
+    },
+    {
+      question: "Is there any free plan?",
+      answer: "Yes"
+    }
+  ]  
+
   return (
     <section className="section">
-      <SectionTitle title="FAQ" />
-      <div className="container px-6 py-12 mx-auto">
-        <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 xl:grid-cols-2">
-        
-        <div>
-            <h1 className="text-xl font-semibold text-gray-700">What can i expect at my first consultation?</h1>
-
-            <p className="mt-2 text-sm text-gray-500 p-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
-            </p>
-        </div>
- 
-        <div>
-            <h1 className="text-xl font-semibold text-gray-700">What are your opening house?</h1>
-
-            <p className="mt-2 text-sm text-gray-500 p-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
-            </p>
-        </div>
-
-        <div>
-            <h1 className="text-xl font-semibold text-gray-700">Do i need a referral?</h1>
-
-            <p className="mt-2 text-sm text-gray-500 p-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
-            </p>
-        </div>
-
-        <div>
-            <h1 className="text-xl font-semibold text-gray-700">Is covered by private health insurance?</h1>
-
-            <p className="mt-2 text-sm text-gray-500 p-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
-            </p>
+      <header>
+        <SectionTitle title="FAQ" />
+      </header>
+      <section className="container px-6 py-12 mx-auto">
+        <main className="relative z-10 container px-4 mx-auto">
+          <div className="md:max-w-4xl mx-auto">
+            <div className="mb-11 flex flex-wrap -m-1">
+            {
+              questions.map((e, index) => <FAQitem key={index} question={e.question} answer={e.answer} />)
+            }
             </div>
-        </div>
-      </div>
+            <footer>
+              <p className="text-gray-600 text-center font-medium">
+                <span>Still have any questions?</span>
+                &nbsp;
+                <Link className="font-semibold text-indigo-600 hover:text-indigo-700" href="/contact">Contact us</Link>
+              </p>
+            </footer>
+          </div>
+        </main>
+      </section>
     </section>
   )
 }

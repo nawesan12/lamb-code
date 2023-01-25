@@ -7,13 +7,13 @@ export default function HomeFeatures() {
       id: 1,
       title: "Fast",
       description: "Lamb Code is the fastest way to improve you tech skills, or just start a new career with us!",
-      image: "/favicon.ico"
+      image: "/placeholder.png"
     },
     {
       id: 2,
       title: "Easy",
       description: "Lamb Code is the easiest way to learn code, with the best teachers, and the best projects!",
-      image: "/favicon.ico"
+      image: "/placeholder.png"
     }
   ]
 
@@ -23,15 +23,15 @@ export default function HomeFeatures() {
         features.map((e, index) => (
           <div 
             key={index} 
-            className={`flex items-center flex-wrap justify-center my-10 ${e.id % 2 === 0? "flex-row-reverse" : ""}`}
+            className={`flex items-center flex-wrap justify-evenly my-10 ${e.id % 2 === 0? "flex-row-reverse" : ""}`}
           >
             <div className="image">
-              <Image src={e.image} alt="Lamb Code" width={250} height={250} />
+              <Image src={e.image} alt="Lamb Code" width={350} height={350} />
             </div>
 
-            <div className="description flex flex-col gap-4 w-96 px-7">
+            <div className="description flex flex-col gap-4 w-96 px-7 py-4">
               <h2 className="text-5xl font-bold">{e.title}</h2>
-              <p className="text-lg w-3/4 opacity-60">{e.description}</p>
+              <p className="text-lg w-full opacity-60">{e.description}</p>
             </div>
           </div>
         ))
