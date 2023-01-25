@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function ArticlePromotion() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center relative overflow-hidden sm:py-12">
+    <section className="min-h-screen bg-gray-50 flex flex-col justify-center relative overflow-hidden sm:py-12">
       <div className="max-w-7xl mx-auto">
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
@@ -10,11 +12,11 @@ export default function ArticlePromotion() {
             </svg>
             <div className="space-y-2">
               <p className="text-slate-800">Learn how to make a glowing gradient background!</p>
-              <a href="https://braydoncoyer.dev/blog/tailwind-gradients-how-to-make-a-glowing-gradient-background" className="block text-indigo-400 group-hover:text-slate-800 transition duration-200" target="_blank" rel="noreferrer">Read Article →</a>
+              <Link href="https://braydoncoyer.dev/blog/tailwind-gradients-how-to-make-a-glowing-gradient-background" className="block text-indigo-400 group-hover:text-slate-800 transition duration-200" target="_blank" rel="noreferrer">Read Article →</Link>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
