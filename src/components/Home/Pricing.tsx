@@ -33,10 +33,7 @@ export default function HomePricing() {
             <PricingCard plan={e} key={index}/>
           ))
         }
-      </section>
-      
-
-      
+      </section>      
     </section>
   )
 }
