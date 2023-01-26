@@ -5,11 +5,11 @@ export default function HomeHeader() {
     <header aria-label="Site Header" className="shadow-sm">
       <div className="mx-auto max-w-screen-xl p-4">
         <div className="flex items-center justify-between gap-4 lg:gap-10">
-          <div className="flex lg:w-0 lg:flex-1">
-            <a href="#">
+          <div className="flex lg:w-0 lg:flex-1 text-black">
+            <Link href="/" title="Lamb Code">
               <span className="sr-only">Logo</span>
-              <span className="h-10 w-20 rounded-lg bg-gray-200"></span>
-            </a>
+              <span className="h-10 w-20 text-lg font-bold">Lamb Code</span>
+            </Link>
           </div>
 
           <nav
