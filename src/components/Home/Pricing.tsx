@@ -6,8 +6,8 @@ export default function HomePricing() {
   const plans = [
     {
       id: 1,
-      name: "Starter",
-      price: 1000,
+      name: "Free",
+      price: 0,
       included: ["Some Courses", "Merit Rewards", "Example", "Diplomas"]
     },
     {

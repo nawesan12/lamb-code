@@ -10,12 +10,24 @@
   --btn-primary: #76FF7B;
   --btn-secondary: #9023A1;
   --special: #C270BB;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
+  font-synthesis:none;
+  text-rendering:optimizeLegibility;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*::selection {
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 html {

@@ -7,13 +7,13 @@ export default function HomeFeatures() {
       id: 1,
       title: "Fast",
       description: "Lamb Code is the fastest way to improve you tech skills, or just start a new career with us!",
-      image: "/placeholder.png"
+      image: "/place.jpg"
     },
     {
       id: 2,
       title: "Easy",
       description: "Lamb Code is the easiest way to learn code, with the best teachers, and the best projects!",
-      image: "/placeholder.png"
+      image: "/place.jpg"
     }
   ]
 
