@@ -1,3 +1,4 @@
+import PodcastBubble from "@/components/Bubbles/Podcast"
 import HomeFAQ from "@/components/Home/FAQ"
 import HomeFeatures from "@/components/Home/Features"
 import HomeFooter from "@/components/Home/Footer"
@@ -12,6 +13,7 @@ import Status from "@/components/Misc/Status"
 export default function Home() {
   return (
     <main className="page">
+      <PodcastBubble />
       <HomeHeader />
       <HomeHero />      
       <HomeFeatures />
