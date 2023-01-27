@@ -1,20 +1,29 @@
-import Link from "next/link";
+"use client"
+import { useState } from "react"
+import Link from "next/link"
 
 export default function HomeHeader() {
+
+  const [navOpen, setNavOpen] = useState(false)
+
+  const toggleNavOpen = () => {
+    setNavOpen(!navOpen)
+  }
+
   return (
     <header aria-label="Site Header" className="shadow-sm">
       <div className="mx-auto max-w-screen-xl p-4">
         <div className="flex items-center justify-between gap-4 lg:gap-10">
-          <div className="flex lg:w-0 lg:flex-1 text-black">
+          <section className="flex lg:w-0 lg:flex-1 text-black">
             <Link href="/" title="Lamb Code">
               <span className="sr-only">Logo</span>
               <span className="h-10 w-20 text-lg font-bold">Lamb Code</span>
             </Link>
-          </div>
+          </section>
 
           <nav
             aria-label="Site Nav"
-            className="hidden gap-8 text-sm font-medium md:flex"
+            className={`${navOpen ? "flex fixed top-16 left-0 flex-col bg-white p-8 shadow-md shadow-slate-400 w-screen transition-all" : "hidden"} gap-8 text-sm font-medium md:flex`}
           >
             <Link className="text-gray-500" href="/courses">Courses</Link>
             <Link className="text-gray-500" href="/staff">Staff</Link>
@@ -25,21 +34,19 @@ export default function HomeHeader() {
           <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">
             <Link
               className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
-              href="/auth/login"
-            >
+              href="/auth/login">
               Log in
             </Link>
 
             <Link
               className="rounded-lg bg-black px-5 py-2 text-sm font-medium text-white"
-              href="/auth/register"
-            >
+              href="/auth/register">
               Sign up
             </Link>
           </div>
 
-          <div className="lg:hidden">
-            <button className="rounded-lg bg-gray-100 p-2 text-gray-600" type="button">
+          <section className="lg:hidden">
+            <button className="rounded-lg bg-gray-100 p-2 text-gray-600" type="button" onClick={toggleNavOpen}>
               <span className="sr-only">Open menu</span>
               <svg
                 aria-hidden="true"
@@ -56,7 +63,7 @@ export default function HomeHeader() {
                 />
               </svg>
             </button>
-          </div>
+          </section>
         </div>
       </div>
     </header>

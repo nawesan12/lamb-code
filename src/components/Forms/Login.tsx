@@ -2,7 +2,7 @@ export default function LoginForm() {
   return (
       <main className="container mx-auto p-4 bg-white flex flex-col items-center justify-center text-gray-700">
     <div className="w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-4">
-      <h1 className="text-4xl font-semibold ">Welcome back.</h1>
+      <h1 className="text-4xl font-semibold ">Welcome back</h1>
     </div>
     <div className="w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
       <input
