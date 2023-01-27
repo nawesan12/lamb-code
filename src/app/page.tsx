@@ -5,6 +5,7 @@ import HomeHeader from "@/components/Home/Header"
 import HomeHero from "@/components/Home/Hero"
 import HomePricing from "@/components/Home/Pricing"
 import HomeStartToday from "@/components/Home/StartToday"
+import HomeStats from "@/components/Home/Stats"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeHeader />
       <HomeHero />      
       <HomeFeatures />
+      <HomeStats />
       <HomePricing />
       <HomeFAQ />
       <HomeStartToday />
