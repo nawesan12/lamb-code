@@ -17,9 +17,6 @@ export default function Home() {
       <HomeFeatures />
       <HomeStats />
       <HomePricing />
-
-      <Status />
-
       <HomeFAQ />
       <HomeStartToday />
       <HomeFooter />
