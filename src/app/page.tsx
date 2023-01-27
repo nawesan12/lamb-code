@@ -6,6 +6,8 @@ import HomeHero from "@/components/Home/Hero"
 import HomePricing from "@/components/Home/Pricing"
 import HomeStartToday from "@/components/Home/StartToday"
 import HomeStats from "@/components/Home/Stats"
+import AlterStatus from "@/components/Misc/AlterStatus"
+import Status from "@/components/Misc/Status"
 
 export default function Home() {
   return (
@@ -15,6 +17,9 @@ export default function Home() {
       <HomeFeatures />
       <HomeStats />
       <HomePricing />
+
+      <Status />
+
       <HomeFAQ />
       <HomeStartToday />
       <HomeFooter />
