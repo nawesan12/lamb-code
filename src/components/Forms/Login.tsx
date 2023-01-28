@@ -2,16 +2,16 @@ export default function LoginForm() {
   return (
       <main className="container mx-auto p-4 bg-white flex flex-col items-center justify-center text-gray-700">
     <div className="w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-4">
-      <h1 className="text-4xl font-semibold ">Welcome back</h1>
+      <h1 className="text-4xl font-semibold flex justify-center mb-4">Welcome back!</h1>
     </div>
-    <div className="w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
+    <div className="w-10/12 space-y-4 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
       <input
-        className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
         type="text"
         placeholder="Email"
       />
       <input
-        className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+        className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
         type="text"
         placeholder="Password"
       />

@@ -6,34 +6,34 @@ export default function RegisterForm() {
         <h1 className="text-4xl font-semibold text-center">Welcome to Lamb Code</h1>
       </header>
 
-      <form className="w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
+      <form className="w-10/12 space-y-4 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
         <input
-          className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           type="text"
           placeholder="Name"
           required
         />
         <input
-          className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           type="text"
           placeholder="Email"
           required
         />
         <input
-          className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           type="tel"
           inputMode="tel"
           placeholder="Phone"
           required
         />
         <input
-          className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           type="password"
           placeholder="Password"
           required
         />
         <select
-          className="mb-4 p-2 appearance-none block w-full bg-gray-200 placeholder-gray-900 rounded border focus:border-teal-500"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
           placeholder="Gender"
         >
           <option value="">Gender</option>
