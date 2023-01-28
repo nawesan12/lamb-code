@@ -9,18 +9,18 @@ export default function Staff() {
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Have you heard about them?</p>
       </div>
     <div className="flex flex-wrap justify-evenly -m-4">
-      
-      <div className="p-4 lg:w-1/4 md:w-1/2">
+
+    <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/leandro.webp" width={200} height={200}/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/fiamma.webp" width={200} height={200}/>
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-gray-900">Leandro Letoile</h2>
-            <h3 className="text-gray-500 mb-3">Co-Founder | Community Manager | Podcast Manager</h3>
+            <h2 className="title-font font-medium text-lg text-gray-900">Fiamma Muscari</h2>
+            <h3 className="text-gray-500 mb-3">Co-Founder | Frontend Developer | Quality Manager</h3>
             <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
             <span className="inline-flex">
               <a className="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
               <a className="ml-2 text-gray-500">
@@ -68,15 +68,15 @@ export default function Staff() {
 
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/fiamma.webp" width={200} height={200}/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/leandro.webp" width={200} height={200}/>
           <div className="w-full">
-            <h2 className="title-font font-medium text-lg text-gray-900">Fiamma Muscari</h2>
-            <h3 className="text-gray-500 mb-3">Co-Founder | Frontend Developer | Quality Manager</h3>
+            <h2 className="title-font font-medium text-lg text-gray-900">Leandro Letoile</h2>
+            <h3 className="text-gray-500 mb-3">Co-Founder | Community Manager | Podcast Manager</h3>
             <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
             <span className="inline-flex">
               <a className="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                 </svg>
               </a>
               <a className="ml-2 text-gray-500">
@@ -93,6 +93,7 @@ export default function Staff() {
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
