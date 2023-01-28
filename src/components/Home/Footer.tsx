@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function HomeFooter() {
@@ -7,9 +8,10 @@ export default function HomeFooter() {
   return (
     <footer aria-label="Site Footer" className="bg-gray-900 font-semibold text-xl">
       <div className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <div className="text-white font-bold text-2xl">
+        <section className="sm:flex sm:items-center sm:justify-between">
+          <div className="text-white font-bold text-2xl flex gap-4">
             Lamb Code
+            <Image src="/lamb.webp" alt="Lamb Code - The Lamb Project" width={48} height={48} />
           </div>
 
           <ul className="flex justify-start gap-6 mt-8 sm:mt-0 sm:justify-end">
@@ -147,7 +149,7 @@ export default function HomeFooter() {
               </a>
             </li>
           </ul>
-        </div>
+        </section>
 
         <div
           className="grid grid-cols-1 gap-8 pt-8 border-t border-gray-100 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
