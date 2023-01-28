@@ -8,32 +8,32 @@ export default function RegisterForm() {
 
       <form className="w-10/12 space-y-4 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
         <input
-          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-[color:var(--btn-primary)] focus:border-[color:var(--btn-primary)] block w-full p-2.5"
           type="text"
           placeholder="Name"
           required
         />
         <input
-          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-[color:var(--btn-primary)] focus:border-[color:var(--btn-primary)] block w-full p-2.5"
           type="text"
           placeholder="Email"
           required
         />
         <input
-          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-[color:var(--btn-primary)] focus:border-[color:var(--btn-primary)] block w-full p-2.5"
           type="tel"
           inputMode="tel"
           placeholder="Phone"
           required
         />
         <input
-          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-[color:var(--btn-primary)] focus:border-[color:var(--btn-primary)] block w-full p-2.5"
           type="password"
           placeholder="Password"
           required
         />
         <select
-          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5"
+          className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-[color:var(--btn-primary)] focus:border-[color:var(--btn-primary)] block w-full p-2.5"
           placeholder="Gender"
         >
           <option value="">Gender</option>
@@ -44,7 +44,7 @@ export default function RegisterForm() {
 
         <footer className="flex items-center">
           <div className="w-1/2 flex items-center">
-            <input id="remember-me" type="checkbox" className="mt-1 mr-2 accent-teal-500" />
+            <input id="remember-me" type="checkbox" className="mt-1 mr-2 accent-[color:var(--btn-primary)]" />
             <label htmlFor="remember-me">Remember me!</label>
           </div>
           <button
@@ -56,7 +56,7 @@ export default function RegisterForm() {
         </footer>
       </form>
       <div className="text-right w-10/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 mb-6">
-        <a className="text-sm font-bold text-teal-500 hover:underline cursor-pointer">Forgot your password?</a>
+        <a className="text-sm font-bold text-[color:var(--btn-primary)] hover:underline cursor-pointer">Forgot your password?</a>
       </div>
     </main>
   )
