@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HomeHeader() {
 
@@ -11,19 +12,19 @@ export default function HomeHeader() {
   }
 
   return (
-    <header aria-label="Site Header" className="shadow-sm">
-      <div className="mx-auto max-w-screen-xl p-4">
+    <header aria-label="Site Header " className="shadow-sm">
+      <div className="mx-auto max-w-screen-xl p-4 ">
         <div className="flex items-center justify-between gap-4 lg:gap-10">
           <section className="flex lg:w-0 lg:flex-1 text-black">
-            <Link href="/" title="Lamb Code">
+            <Link href="/"  title="Lamb Code">
               <span className="sr-only">Logo</span>
-              <span className="h-10 w-20 text-lg font-bold">Lamb Code</span>
+              <Image alt="team" className="ml-4" src="/lamb.webp" width={64} height={64}/>
             </Link>
           </section>
 
           <nav
             aria-label="Site Nav"
-            className={`${navOpen ? "flex fixed top-16 left-0 flex-col bg-white p-8 shadow-md shadow-slate-400 w-screen transition-all" : "hidden"} gap-8 text-sm font-medium md:flex`}
+            className={`${navOpen ? "flex fixed top-16 left-0 flex-col bg-white p-8 shadow-md shadow-slate-400 w-screen transition-all" : "hidden"} gap-8 text-lg font-medium md:flex`}
           >
             <Link className="text-gray-500" href="/courses">Courses</Link>
             <Link className="text-gray-500" href="/staff">Staff</Link>
@@ -33,13 +34,13 @@ export default function HomeHeader() {
 
           <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">
             <Link
-              className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
+              className="rounded-lg bg-gray-100 px-5 py-2 text-md font-medium text-gray-500"
               href="/auth/login">
               Log in
             </Link>
 
             <Link
-              className="rounded-lg bg-black px-5 py-2 text-sm font-medium text-white"
+              className="rounded-lg bg-black px-5 py-2 text-md font-medium text-white"
               href="/auth/register">
               Sign up
             </Link>
