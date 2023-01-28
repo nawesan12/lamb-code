@@ -44,7 +44,7 @@ export default function RegisterForm() {
 
         <footer className="flex items-center">
           <div className="w-1/2 flex items-center">
-            <input id="remember-me" type="checkbox" className="mt-1 mr-2" />
+            <input id="remember-me" type="checkbox" className="mt-1 mr-2 accent-teal-500" />
             <label htmlFor="remember-me">Remember me!</label>
           </div>
           <button
