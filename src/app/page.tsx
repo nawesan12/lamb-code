@@ -17,8 +17,8 @@ export default function Home() {
       <HomeHeader />
       <HomeHero />      
       <HomeFeatures />
-      <HomeStats />
       <HomePricing />
+      <HomeStats />
       <HomeFAQ />
       <HomeStartToday />
       <HomeFooter />

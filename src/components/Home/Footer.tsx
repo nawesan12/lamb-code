@@ -254,9 +254,9 @@ export default function HomeFooter() {
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-50 transition hover:opacity-75">
+                  <Link href="/terms-and-conditions" className="text-gray-50 transition hover:opacity-75">
                     Terms and conditions
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
