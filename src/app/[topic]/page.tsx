@@ -1,7 +1,7 @@
 const fetchTopic = async (topic: string) => {
-  const res = await fetch(`${process.env.ACTUAL_ORIGIN}/topics/${topic}`)
-  const data = await res.json()
-
+  const res = await fetch(`${process.env.ACTUAL_ORIGIN}/api/topics/${topic}`)
+  const data = await res.text()
+  console.log(data)
   return data
 }
 
