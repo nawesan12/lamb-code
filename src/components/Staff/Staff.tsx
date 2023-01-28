@@ -12,7 +12,7 @@ export default function Staff() {
       
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="/staff/leandro.webp" width={200} height={200}/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/leandro.webp" width={200} height={200}/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Leandro Letoile</h2>
             <h3 className="text-gray-500 mb-3">Co-Founder | Community Manager | Podcast Manager</h3>
@@ -40,7 +40,7 @@ export default function Staff() {
       
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="/staff/nawe.webp" width={200} height={200} />
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/nawe.webp" width={200} height={200} />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Nahuel Santillan</h2>
             <h3 className="text-gray-500 mb-3">Founder | Fullstack Developer | Manager</h3>
@@ -68,7 +68,7 @@ export default function Staff() {
 
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="/staff/fiamma.webp" width={200} height={200}/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/fiamma.webp" width={200} height={200}/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Fiamma Muscari</h2>
             <h3 className="text-gray-500 mb-3">Co-Founder | Frontend Developer | Quality Manager</h3>
