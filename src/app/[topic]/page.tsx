@@ -1,4 +1,4 @@
-export default function TopicPage({ params }:{ params: { topic: string } }) {
+export default async function TopicPage({ params }:{ params: { topic: string } }) {
   
   const { topic } = params
 
