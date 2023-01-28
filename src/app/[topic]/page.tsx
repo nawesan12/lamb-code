@@ -1,6 +1,6 @@
 const fetchTopic = async (topic: string) => {
   const res = await fetch(`${process.env.ACTUAL_ORIGIN}/api/topics/${topic}`)
-  const data = await res.text()
+  const data = await res.json()
   console.log(data)
   return data
 }
@@ -12,7 +12,7 @@ export default async function TopicPage({ params }:{ params: { topic: string } }
 
   return (
     <section className="page">
-      {JSON.stringify(res)}
+      {res.topic}
     </section>
   )
 }
