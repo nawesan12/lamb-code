@@ -13,7 +13,7 @@ export default function CardProfile() {
           height={100}
         />
         <div className="p-4">
-          <h1 className="text-xl"> Fiamma Muscari</h1>
+          <h1 className="text-xl font-bold"> Fiamma Muscari</h1>
           <p>Estudiante</p>
         </div>
       </article>
