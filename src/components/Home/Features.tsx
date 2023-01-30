@@ -21,7 +21,7 @@ export default function HomeFeatures() {
     <section className="section alter-bg flex flex-col items-center justify-evenly">
       {
         features.map((e, index) => (
-          <div 
+          <article
             key={index} 
             className={`flex items-center flex-wrap justify-evenly my-10 ${e.id % 2 === 0? "flex-row-reverse" : ""}`}
           >
@@ -33,7 +33,7 @@ export default function HomeFeatures() {
               <h2 className="text-5xl font-bold">{e.title}</h2>
               <p className="text-lg w-full opacity-60">{e.description}</p>
             </div>
-          </div>
+          </article>
         ))
       }
     </section>
