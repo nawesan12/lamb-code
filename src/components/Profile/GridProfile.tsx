@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function GridProfile() {
   return (
-    <div className="grid grid-cols-3 gap-4" style={{ gridColumn: "2 / 5", gridRow: "3 / 5" }}>
+    <div className="lg:grid lg:grid-cols-3 gap-4 flex flex-col" style={{ gridColumn: "2 / 5", gridRow: "2 / 4" }}>
 
       <article className="flex flex-col gap-3 rounded-2xl bg-white p-5">
         <h2 className="p-2 text-xl font-bold">Platform settings</h2>
@@ -24,7 +24,7 @@ export default function GridProfile() {
         </label>
       </article>
 
-      <article className="flex items-center gap-3 rounded-2xl bg-white p-5">
+      <article className="flex flex-col items-center gap-3 rounded-2xl bg-white p-5">
         <h2 className="p-2 text-xl font-bold">Courses</h2>
         <section className="flex items-center">
           <Image
@@ -35,7 +35,7 @@ export default function GridProfile() {
             height={100}
           />
           <div className="p-4">
-            <h3 className="text-xl font-bold">curso 1</h3>
+            <h3 className="text-xl font-bold">Curso 1</h3>
           </div>
         </section>
         <section className="flex items-center">
@@ -47,10 +47,10 @@ export default function GridProfile() {
             height={100}
           />
           <div className="p-4">
-            <h3 className="text-xl font-bold">curso 2</h3>
+            <h3 className="text-xl font-bold">Curso 2</h3>
           </div>
         </section>
-        <section className="flex flex-col items-center">
+        <section className="flex items-center">
           <Image
             src="/lamb.webp"
             alt="Course image | Lamb Code | The Lamb Project"
@@ -59,7 +59,7 @@ export default function GridProfile() {
             height={100}
           />
           <div className="p-4">
-            <h3 className="text-xl font-bold">curso 3</h3>
+            <h3 className="text-xl font-bold">Curso 3</h3>
           </div>
         </section>
       </article>
