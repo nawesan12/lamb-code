@@ -8,13 +8,13 @@ export default function AsideProfile() {
         <Image
           src="/lamb.webp"
           alt="Lamb Code | The Lamb Project"
-          height={200}
-          width={200}
+          height={125}
+          width={125}
         />
       </Link>
 
       <nav>
-        
+
       </nav>
     </aside>
   );
