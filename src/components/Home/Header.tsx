@@ -12,7 +12,7 @@ export default function HomeHeader() {
   }
 
   return (
-    <header aria-label="Site Header " className="shadow-sm">
+    <header aria-label="Site Header" className="shadow-sm">
       <div className="mx-auto max-w-screen-xl p-4 ">
         <div className="flex items-center justify-between gap-4 lg:gap-10">
           <section className="flex lg:w-0 lg:flex-1 text-black">
@@ -24,12 +24,12 @@ export default function HomeHeader() {
 
           <nav
             aria-label="Site Nav"
-            className={`${navOpen ? "flex fixed top-16 left-0 flex-col bg-white p-8 shadow-md shadow-slate-400 w-screen transition-all" : "hidden"} gap-8 text-lg font-medium md:flex`}
+            className={`${navOpen ? "flex absolute top-20 left-0 flex-col bg-white p-8 shadow-md shadow-slate-400 w-screen transition-all z-50" : "hidden"} gap-8 text-lg font-medium md:flex`}
           >
-            <Link className="text-gray-500" href="/courses">Courses</Link>
-            <Link className="text-gray-500" href="/staff">Staff</Link>
-            <Link className="text-gray-500" href="/plans">Plans</Link>
-            <Link className="text-gray-500" href="/contact">Contact</Link>
+            <Link className="text-gray-500 bg-white" href="/courses">Courses</Link>
+            <Link className="text-gray-500 bg-white" href="/staff">Staff</Link>
+            <Link className="text-gray-500 bg-white" href="/plans">Plans</Link>
+            <Link className="text-gray-500 bg-white" href="/contact">Contact</Link>
           </nav>
 
           <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">

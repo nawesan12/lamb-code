@@ -14,17 +14,23 @@ export default function AsideProfile() {
       </Link>
 
       <nav>
-        <ul>
+        <ul className="flex flex-col gap-4">
           <li>
             <Link href="/profile">
               Profile
             </Link>
+          </li>
+          <li>
             <Link href="/explore">
               Explore
             </Link>
-            <Link href="/courses">
+          </li>
+          <li>
+          <Link href="/courses">
               Courses       
             </Link>
+          </li>
+          <li>
             <Link href="/network">
               Network
             </Link>
