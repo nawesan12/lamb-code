@@ -5,12 +5,10 @@ import GridProfile from "@/components/Profile/GridProfile";
 export default function Page() {
   return (
     <section className="page bg-slate-100 p-10">
-      <section className="flex flex-grow gap-8">
+      <section className="grid max-h-screen grid-cols-4 grid-rows-4 gap-8">
         <AsideProfile />
-        <section className=" max-h-36 w-screen basis-3/4 items-center grid gap-8 rounded-2xl  bg-white p-5">
-          <CardProfile />
-          <GridProfile />
-        </section>
+        <CardProfile />
+        <GridProfile />
       </section>
     </section>
   );
