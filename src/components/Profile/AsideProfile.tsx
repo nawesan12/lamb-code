@@ -14,7 +14,22 @@ export default function AsideProfile() {
       </Link>
 
       <nav>
-
+        <ul>
+          <li>
+            <Link href="/profile">
+              Profile
+            </Link>
+            <Link href="/explore">
+              Explore
+            </Link>
+            <Link href="/courses">
+              Courses       
+            </Link>
+            <Link href="/network">
+              Network
+            </Link>
+          </li>          
+        </ul>
       </nav>
     </aside>
   );
