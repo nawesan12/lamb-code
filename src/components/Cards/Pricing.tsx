@@ -10,7 +10,7 @@ export default function PricingCard({ plan }: { plan: any }) {
         <ul className="flex flex-col gap-2">
           {plan.included?.map((e: string, index: number) => (
             <li key={index} className="flex gap-2 items-center font-medium text-gray-600">
-              <svg width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" strokeWidth="2" stroke="#000000" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <circle cx="12" cy="12" r="9" />
                 <path d="M9 12l2 2l4 -4" />
