@@ -3,20 +3,21 @@ import Image from "next/image";
 export default function Staff() {
   return (
     <section className="text-gray-600 body-font">
-    <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-col text-center w-full mb-20">
-        <h1 className="text-4xl font-bold title-font mb-4 text-gray-900">THE TEAM</h1>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Have you heard about them?</p>
-      </div>
-    <div className="flex flex-wrap justify-evenly -m-4">
+      <header className="container px-5 pt-20 mx-auto">
+        <section className="flex flex-col text-center w-full mb-20">
+          <h1 className="text-4xl font-bold title-font mb-4 text-gray-900">THE TEAM</h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Have you heard about them?</p>
+        </section>
+      </header>
 
-    <div className="p-4 lg:w-1/4 md:w-1/2">
+      <main className="flex flex-wrap justify-evenly -m-4">
+      <article className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
           <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/fiamma.webp" width={200} height={200}/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Fiamma Muscari</h2>
             <h3 className="text-gray-500 mb-3">Co-Founder | Frontend Developer | Quality Manager</h3>
-            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <p className="mb-4">Full time mom and code lover</p>
             <span className="inline-flex">
               <a className="text-gray-500">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
@@ -36,15 +37,15 @@ export default function Staff() {
             </span>
           </div>
         </div>
-      </div>
+      </article>
       
-      <div className="p-4 lg:w-1/4 md:w-1/2">
+      <article className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
           <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/nawe.webp" width={200} height={200} />
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Nahuel Santillan</h2>
             <h3 className="text-gray-500 mb-3">Founder | Fullstack Developer | Manager</h3>
-            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <p className="mb-4">19yo lover of technology, code and future</p>
             <span className="inline-flex">
               <a className="text-gray-500">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
@@ -64,15 +65,15 @@ export default function Staff() {
             </span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div className="p-4 lg:w-1/4 md:w-1/2">
+      <article className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
           <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="/staff/leandro.webp" width={200} height={200}/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-900">Leandro Letoile</h2>
-            <h3 className="text-gray-500 mb-3">Co-Founder | Community Manager | Podcast Manager</h3>
-            <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+            <h3 className="text-gray-500 mb-3">Co-Founder | Community Manager | Podcast Voice</h3>
+            <p className="mb-4">Insert description here</p>
             <span className="inline-flex">
               <a className="text-gray-500">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
@@ -92,10 +93,8 @@ export default function Staff() {
             </span>
           </div>
         </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
+      </article>
+    </main>
+  </section>
   )
 }

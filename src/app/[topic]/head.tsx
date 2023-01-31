@@ -1,10 +1,10 @@
-export default function Head({ params }: { params: { topic: string }}) {
+export default function Head({ params }: { params: { topic: string } }) {
 
-  const { topic } = params
+  const title = params.topic + " | Lamb Code"
 
   return (
     <>
-      <title>{topic} - Lamb Code</title>
+      <title>{title}</title>
     </>
   )
 }

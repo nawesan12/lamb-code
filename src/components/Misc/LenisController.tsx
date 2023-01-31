@@ -1,9 +1,9 @@
 "use client"
 import Lenis from '@studio-freight/lenis'
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 
 export default function LenisController({ children }: { children: React.ReactNode }) {
-  useLayoutEffect(() => {
+  useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),

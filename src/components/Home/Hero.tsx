@@ -9,6 +9,7 @@ export default function HomeHero() {
 
       <section className="hero-teaser flex flex-col items-center justify-center gap-4">
         <p className="opacity-60 text-center text-lg font-medium w-4/5">Learn everything you need just to become the GOAT</p>
+        <p className="sr-only">Where the knowledge begins, the best bootcamp ever!</p>
         <GetStartedBtn />
       </section>
     </section>

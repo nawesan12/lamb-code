@@ -2,7 +2,7 @@ export default function Head() {
 
   return (
     <>
-      <title>Starter Plan - Lamb Code</title>
+      <title>Free Plan - Lamb Code</title>
     </>
   )
 }

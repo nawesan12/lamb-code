@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <section className="page">
-      Plan Starter
+      Plan Free
     </section>
   )
 }
